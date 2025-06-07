@@ -1,0 +1,318 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   SPMB SDN Sukadami 02
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+     <a href="#" class="flex items-center space-x-3">
+      <img alt="Logo SDN Sukadami 02, a stylized school building with blue and white colors" class="w-12 h-12 object-contain" height="48" src="logo.png" width="48"/>
+      <span class="text-gray-900 font-extrabold text-xl sm:text-2xl tracking-tight">
+       SD Negeri Sukadami 02
+      </span>
+     </a>
+     <div class="hidden md:flex space-x-10 font-semibold text-gray-700 text-base">
+      <a href="#" class="relative group py-2 px-1 text-gray-900 border-b-2 border-blue-600">
+       Beranda
+       <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 scale-x-100 origin-left transition-transform"></span>
+      </a>
+      <a href="#alur" class="relative group py-2 px-1 hover:text-blue-600 transition-colors">
+       Alur
+       <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
+      </a>
+      <a href="#syarat" class="relative group py-2 px-1 hover:text-blue-600 transition-colors">
+       Syarat
+       <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
+      </a>
+      <a href="#admin" class="relative group py-2 px-1 hover:text-blue-600 transition-colors">
+       Panitia
+       <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 scale-x-0 origin-left group-hover:scale-x-100 transition-transform"></span>
+      </a>
+     </div>
+     <button aria-label="Toggle menu" class="text-gray-700 md:hidden focus:outline-none focus:ring-2 focus:ring-blue-600" id="menu-btn">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="md:hidden bg-white border-t border-gray-200 shadow-sm" id="mobile-menu">
+    <a class="block px-6 py-3 font-semibold text-gray-900 border-b border-gray-200 hover:bg-blue-50 transition" href="#">
+     Beranda
+    </a>
+    <a class="block px-6 py-3 font-semibold text-gray-700 border-b border-gray-200 hover:bg-blue-50 transition" href="#alur">
+     Alur
+    </a>
+    <a class="block px-6 py-3 font-semibold text-gray-700 border-b border-gray-200 hover:bg-blue-50 transition" href="#syarat">
+     Syarat
+    </a>
+    <a class="block px-6 py-3 font-semibold text-gray-700 hover:bg-blue-50 transition" href="#admin">
+     Panitia
+    </a>
+   </div>
+  </nav>
+  <main class="flex-grow max-w-4xl mx-auto px-6 sm:px-8 lg:px-10 py-12">
+   <!-- HEADER -->
+   <header class="mb-14 text-center max-w-3xl mx-auto">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+     Sistem Penerimaan Murid Baru (SPMB)
+    </h1>
+    <p class="mt-4 text-gray-600 text-lg sm:text-xl">
+     SD Negeri Sukadami 02 - Tahun Pelajaran 2025/2026
+    </p>
+   </header>
+   <!-- ALUR PENDAFTARAN -->
+   <section class="mb-16" id="alur">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-8 border-l-4 border-blue-600 pl-4 drop-shadow-sm">
+     Alur Pendaftaran
+    </h2>
+    <ol class="bg-white rounded-xl shadow-lg divide-y divide-gray-200">
+     <li class="px-8 py-6 text-gray-700 text-lg flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <span class="font-semibold text-blue-700 mb-2 sm:mb-0">
+       19 - 20 Juni 2025:
+      </span>
+      <span>
+       Mengambil dan mengisi formulir pendaftaran
+      </span>
+     </li>
+     <li class="px-8 py-6 text-gray-700 text-lg flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <span class="font-semibold text-blue-700 mb-2 sm:mb-0">
+       23 - 24 Juni 2025:
+      </span>
+      <span>
+       Pengembalian formulir dan pengumpulan berkas
+      </span>
+     </li>
+     <li class="px-8 py-6 text-gray-700 text-lg flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <span class="font-semibold text-blue-700 mb-2 sm:mb-0">
+       23 Juni - 2 Juli 2025:
+      </span>
+      <span>
+       Verifikasi berkas
+      </span>
+     </li>
+     <li class="px-8 py-6 text-gray-700 text-lg flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <span class="font-semibold text-blue-700 mb-2 sm:mb-0">
+       3 Juli 2025:
+      </span>
+      <span>
+       Pengumuman hasil seleksi melalui website
+      </span>
+     </li>
+     <li class="px-8 py-6 text-gray-700 text-lg flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <span class="font-semibold text-blue-700 mb-2 sm:mb-0">
+       3 - 5 Juli 2025:
+      </span>
+      <span>
+       Daftar ulang di sekolah
+      </span>
+     </li>
+    </ol>
+   </section>
+   <!-- SYARAT PENDAFTARAN -->
+   <section class="mb-8" id="syarat">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-8 border-l-4 border-blue-600 pl-4 drop-shadow-sm">
+     Syarat Pendaftaran
+    </h2>
+    <ul class="bg-white rounded-xl shadow-lg divide-y divide-gray-200 text-gray-700 text-lg">
+     <li class="px-8 py-6 flex items-start space-x-3">
+      <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+      <span>Usia paling rendah 6 tahun per 1 Juli 2025</span>
+     </li>
+     <li class="px-8 py-6 flex items-start space-x-3">
+      <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+      <span>Mengisi formulir pendaftaran</span>
+     </li>
+     <li class="px-8 py-6 flex items-start space-x-3">
+      <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+      <span>Fotokopi akta kelahiran calon murid</span>
+     </li>
+     <li class="px-8 py-6 flex items-start space-x-3">
+      <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+      <span>Fotokopi Kartu Keluarga <strong>(WAJIB KK Kab. Bekasi)</strong></span>
+     </li>
+     <li class="px-8 py-6 flex items-start space-x-3">
+      <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+      <span>Fotokopi KTP kedua orangtua</span>
+     </li>
+     <li class="px-8 py-6 flex items-start space-x-3">
+      <i class="fas fa-check-circle text-blue-600 mt-1 flex-shrink-0"></i>
+      <span>Fotokopi Ijazah Pra-SD/TK/PAUD <em>(jika ada)</em></span>
+     </li>
+    </ul>
+   </section>
+   <!-- INFORMASI MURID DITERIMA -->
+   <section class="mb-16 bg-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold text-gray-900 mb-6 border-l-4 border-blue-600 pl-4 drop-shadow-sm">
+     Informasi Murid Diterima
+    </h3>
+    <ul class="list-disc list-inside space-y-3 text-gray-700 text-lg">
+     <li>Pengumuman murid diterima dapat diakses melalui website resmi sekolah.</li>
+     <li>Daftar murid yang diterima akan diumumkan pada tanggal 3 Juli 2025.</li>
+     <li>Calon murid yang diterima wajib melakukan daftar ulang pada tanggal 3 - 5 Juli 2025.</li>
+     <li>Informasi lebih lanjut dapat diperoleh dengan menghubungi panitia melalui email atau telepon.</li>
+     <li>Pastikan nomor antrian sudah didapatkan melalui scan barcode di sekolah untuk proses verifikasi.</li>
+    </ul>
+    <div class="mt-8 text-center">
+     <a href="https://script.google.com/macros/s/AKfycbxAX0U2IdyjgbmELBsNPCp5iFGKEBvUDrhZiFFXFb93Epj7yBZ-uZ0kTWLuo_T9qFBoZQ/exec" class="inline-block bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:bg-blue-800 transition text-lg">
+      Cek Disini
+      <i class="fas fa-arrow-right ml-3"></i>
+     </a>
+    </div>
+   </section>
+   <!-- GRUP WHATSAPP -->
+<section class="mb-16 max-w-3xl mx-auto">
+  <div class="flex items-center bg-blue-100 border border-blue-300 text-blue-800 text-base font-medium rounded-lg p-5 shadow-md" role="alert">
+    <i class="fab fa-whatsapp fa-2x mr-4 flex-shrink-0"></i>
+    <div>
+      <h2 class="font-semibold text-lg mb-1">Grup Info SPMB - SD Negeri Sukadami 02</h2>
+      <p class="mb-2">
+        Dapatkan informasi terbaru seputar proses Seleksi Penerimaan Murid Baru (SPMB) langsung dari panitia. Silakan bergabung ke grup WhatsApp resmi agar tidak ketinggalan pengumuman penting, jadwal, dan info teknis lainnya.
+      </p>
+      <<a href="https://chat.whatsapp.com/Jbin6ZHQOdtKsb3Yv1avWT" target="_blank" rel="noopener noreferrer"
+   class="inline-block bg-blue-600 text-white rounded-full px-4 py-2 text-sm font-semibold shadow hover:bg-blue-700 transition duration-300 ease-in-out">
+  Gabung Grup WhatsApp
+</a>
+
+    </div>
+  </div>
+</section>
+<!-- PANITIA / ADMIN -->
+<section id="admin" class="mb-20 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-semibold text-gray-800 mb-10 border-l-4 border-blue-600 pl-4 drop-shadow-sm text-center">
+    Panitia SPMB
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+    <!-- Hj. Julaeha -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="ibuhj.jpg" alt="Hj. Julaeha" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Hj. Julaeha, S.Pd, MM</h3>
+      <p class="text-blue-700 font-medium mb-5">Kepala Sekolah</p>
+      <a href="" 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Lina Okpiani -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="ibuina.jpg" alt="Lina Okpiani" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Lina Okpiani, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/6289637969619?text=Halo%20Bu%20Lina%2C%20saya%20ingin%20bertanya%20tentang%20pendaftaran%20siswa%20baru." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Budiningsih -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="bubudi.jpg" alt="Budiningsih" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Budiningsih, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/6281317209246?text=Halo%20Bu%20Budiningsih%2C%20saya%20ingin%20bertanya%20tentang%20verifikasi%20data%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Halimatu Sa'diah -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="ibudiah.jpg" alt="Halimatu Sa'diah" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Halimatu Sa'diah, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/6285882639214?text=Halo%20Bu%20Halimatu%2C%20saya%20butuh%20bantuan%20teknis%20terkait%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Liena Sartika -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="liena.jpg" alt="Liena Sartika" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Liena Sartika, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/6281281953200?text=Halo%20Bu%20Liena%2C%20saya%20ingin%20menanyakan%20tentang%20biaya%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+       <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Herdi Fibarsah -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="pakherdi.jpg" alt="Herdi Fibarsah" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Herdi Fibarsah, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/6282115660661?text=Halo%20Pak%20Herdi%2C%20saya%20ingin%20menanyakan%20tentang%20biaya%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+       <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Yayat Sudrajat -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="pakyay.jpg" alt="Yayat Sudrajat" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Yayat Sudrajat, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/6283823393808?text=Halo%20Pak%20Yayat%2C%20saya%20ingin%20bertanya%20mengenai%20jadwal%20dan%20formulir%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Ahmad Yani -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="pakyani.jpg" alt="Ahmad Yani" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Ahmad Yani, S.Pd</h3>
+      <p class="text-blue-700 font-medium mb-5">Guru</p>
+      <a href="https://wa.me/628985210665?text=Halo%20Pak%20Ahmad%2C%20saya%20perlu%20informasi%20lokasi%20dan%20tata%20cara%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+    <!-- Esa Akbar Febrian -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition">
+      <img class="rounded-full w-28 h-28 object-cover mb-6" src="esa.jpg" alt="Esa Akbar Febrian" />
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Esa Akbar Febrian</h3>
+      <p class="text-blue-700 font-medium mb-5">Tata Usaha</p>
+      <a href="https://wa.me/6281220808561?text=Halo%20Pak%20Esa%2C%20saya%20perlu%20informasi%20lokasi%20dan%20tata%20cara%20pendaftaran." 
+         class="inline-flex items-center justify-center px-6 py-3 border border-blue-700 text-blue-700 rounded-full text-base font-semibold hover:bg-blue-700 hover:text-white transition">
+        <i class="fab fa-whatsapp mr-3"></i> Hubungi
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+  <footer class="bg-gray-100 text-gray-600 py-8 text-center text-sm sm:text-base border-t border-gray-200">
+   © 2025 SD Negeri Sukadami 02. All rights reserved.
+  </footer>
+  <script>
+   const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
